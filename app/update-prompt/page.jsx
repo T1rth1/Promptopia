@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect,useState,Suspense } from "react";
+import { useEffect,useState } from "react";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from 'next/navigation';
 import Form from "@components/Form";
@@ -58,7 +58,6 @@ const EditPrompt = () => {
         }
     }
   return (
-    <Suspense fallback={<div>Loading...</div>}>
     <Form
         type="Edit"
         post={post}
@@ -67,7 +66,6 @@ const EditPrompt = () => {
         submitting={submitting}
         handleSubmit={updatePrompt}
     /> // here we create one Form component and passed the props..in this props we passing this updatePrompt function, setPost hook function and submitting variable
-    </Suspense>
   );
 };
 

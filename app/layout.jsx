@@ -1,4 +1,5 @@
 import '@styles/globals.css';
+import { Suspense } from 'react';
 import Provider from "@components/Provider"
 import Nav from "@components/Nav"; // we created navbar here because we want to use this navbar thrpugh out our whole app..
 // import Provider from "@components/Provider";
@@ -24,7 +25,10 @@ const RootLayout = ({children}) => {
                 </div>
                 <main className="app">
                     <Nav/>
+                <Suspense fallback={<div>Loading...</div>}>
+                
                     {children}
+                </Suspense>
                 </main>
                 <link rel="icon" href="/assets/images/logo.svg" sizes="any" />
             </Provider>
