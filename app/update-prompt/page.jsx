@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect,useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect,useState,Suspense } from "react";
+import { useRouter } from "next/navigation";
+import { useSearchParams } from 'next/navigation';
 import Form from "@components/Form";
 
 const EditPrompt = () => {
@@ -9,9 +10,9 @@ const EditPrompt = () => {
     // and navbar and other background gradient effect is applied to this create prompt page automatically..
     // and functionality of this "/update-prompt" page is implemented in this page.jsx file..
     // how cool nextJs is!😎
-    const router = useRouter();
     const searchParams = useSearchParams();
     const promptId = searchParams.get("id"); //  after clicking on the Edit button we went on this page /update-prompt?id=${post._id} we get the id of that current post from there..
+    const router = useRouter();
     const [submitting, setSubmitting] = useState(false);
     const [post, setPost] = useState({
         prompt:'',
@@ -56,6 +57,7 @@ const EditPrompt = () => {
         }
     }
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <Form
         type="Edit"
         post={post}
@@ -64,6 +66,7 @@ const EditPrompt = () => {
         submitting={submitting}
         handleSubmit={updatePrompt}
     /> // here we create one Form component and passed the props..in this props we passing this updatePrompt function, setPost hook function and submitting variable
+    </Suspense>
   );
 };
 

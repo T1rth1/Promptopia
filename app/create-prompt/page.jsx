@@ -50,7 +50,6 @@ const CreatePrompt = () => {
         setPost={setPost}
         submitting={submitting}
         handleSubmit={createPrompt}
-
     /> // here we create one Form component and passed the props..in this props we passing this createPrompt function, setPost hook function and submittin variable
 
   )
