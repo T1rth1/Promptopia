@@ -29,7 +29,7 @@ export const PATCH = async (request, { params }) => {
         existingPrompt.prompt = prompt; // now we update the existingPrompt's prompt by the new updated prompt
         existingPrompt.tag = tag; // update the tag also 
         await existingPrompt.save(); // save the new updated prompt to the data base..
-        return new Response(JSON.stringify(existingPrompt),{status:200})
+        return new Response("Successfully updated the Prompts",{status:200})
     }catch(error){
         return new Response("Failed to update prompt",{status:500});
     }
@@ -48,7 +48,7 @@ export const DELETE = async (request, { params }) => {
             return new Response("Prompt not found", { status: 404 });
         }
 
-        console.log("Prompt deleted successfully:", deletedPrompt);
+        // console.log("Prompt deleted successfully:", deletedPrompt);
         return new Response("Prompt deleted successfully!", { status: 200 });
     }catch(error){
         return new Response("Failed to delete prompt",{status:500});

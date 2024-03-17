@@ -25,8 +25,8 @@ const EditPrompt = () => {
             setPost({
                 prompt: data.prompt,
                 tag: data.tag,
-            })
-        }
+            });
+        };
         if(promptId) getPromptDetails(); // if promptId exist then we called this getPromptDetails function...
     },[promptId])
     const updatePrompt = async (e) => {
@@ -43,9 +43,9 @@ const EditPrompt = () => {
                     // function and set this "post" hook state and after this when when user clicked on the
                     // editpost button then we change the "post" hook using setPost function in that Form.jsx file and we use it here that hook state "post"..
                     // because we passing the same hook state to the Form.jsx file..
-                }) // we make a post request to this api route with passing the JSON object which contain the prompt and tag of that particular prompt..
+                }), // we make a post request to this api route with passing the JSON object which contain the prompt and tag of that particular prompt..
                 // and we destruture this data into the /api/prompt/[id]/route.js file..and use it to update the new data(prompt and tag) into data base..
-            })
+            });
             if(response.ok){
                 router.push("/"); // and if we update the response sucessfully then redirect to the homepage..
             }
@@ -64,7 +64,7 @@ const EditPrompt = () => {
         submitting={submitting}
         handleSubmit={updatePrompt}
     /> // here we create one Form component and passed the props..in this props we passing this updatePrompt function, setPost hook function and submitting variable
-  )
-}
+  );
+};
 
 export default EditPrompt
