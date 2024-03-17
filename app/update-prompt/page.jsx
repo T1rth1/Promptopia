@@ -12,6 +12,7 @@ const EditPrompt = () => {
     // how cool nextJs is!😎
     const searchParams = useSearchParams();
     const promptId = searchParams.get("id"); //  after clicking on the Edit button we went on this page /update-prompt?id=${post._id} we get the id of that current post from there..
+    if(!promptId) return null;
     const router = useRouter();
     const [submitting, setSubmitting] = useState(false);
     const [post, setPost] = useState({
