@@ -1,8 +1,8 @@
 # 🌟 Promptopia - Discover and Share AI-Powered Prompts 🌟
 
-[![GitHub stars](https://img.shields.io/github/stars/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia/network)
-[![GitHub issues](https://img.shields.io/github/issues/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia/issues)
+[![GitHub stars](https://img.shields.io/github/stars/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia)
+[![GitHub forks](https://img.shields.io/github/forks/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia)
+[![GitHub issues](https://img.shields.io/github/issues/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia)
 
 Promptopia is a robust Full Stack Next.js application designed as a one-stop solution for discovering and sharing AI-powered prompts.
 
@@ -64,25 +64,6 @@ Promptopia is a robust Full Stack Next.js application designed as a one-stop sol
     ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
-
-## 📂 Project Structure
-
-├── components
-│ ├── Auth
-│ ├── Layout
-│ └── Prompt
-├── pages
-│ ├── api
-│ ├── auth
-│ ├── prompts
-│ ├── index.js
-│ └── _app.js
-├── styles
-│ ├── globals.css
-├── utils
-│ ├── db.js
-├── .env.local
-└── package.json
 
 ## 📧 Contact
 
