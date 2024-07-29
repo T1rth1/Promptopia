@@ -22,19 +22,17 @@ Promptopia is a robust Full Stack Next.js application designed as a one-stop sol
 
 ## 📸 Screenshots
 
-      Home Page with dynamic search bar
-      ![image](https://github.com/user-attachments/assets/4a666ba3-b0cc-44ec-ab6f-ec2cafed5275)
+### 🏠 Home Page with Dynamic Search Bar
+![Home Page](https://github.com/user-attachments/assets/4a666ba3-b0cc-44ec-ab6f-ec2cafed5275)
 
-      After log-in
-      ![image](https://github.com/user-attachments/assets/9dbf5808-17ba-4995-b977-5c08dce9b92e)
+### 🔐 After Log-in
+![After Log-in](https://github.com/user-attachments/assets/9dbf5808-17ba-4995-b977-5c08dce9b92e)
 
-      Create Prompt Page
-      ![image](https://github.com/user-attachments/assets/eb06298c-9ffb-4298-843a-2be0c7830714)
+### ✍️ Create Prompt Page
+![Create Prompt Page](https://github.com/user-attachments/assets/eb06298c-9ffb-4298-843a-2be0c7830714)
 
-      User Can Edit/Delete particular prompt and also copy the prompt
-      ![image](https://github.com/user-attachments/assets/801e3529-4cf0-49dd-a0ae-c920c013e78d)
-
-
+### 📝 User Can Edit/Delete Particular Prompt and Also Copy the Prompt
+![Edit/Delete Prompt](https://github.com/user-attachments/assets/801e3529-4cf0-49dd-a0ae-c920c013e78d)
 
 
 
