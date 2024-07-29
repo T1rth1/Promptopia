@@ -1,9 +1,5 @@
 # 🌟 Promptopia - Discover and Share AI-Powered Prompts 🌟
 
-[![GitHub stars](https://img.shields.io/github/stars/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia)
-[![GitHub forks](https://img.shields.io/github/forks/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia)
-[![GitHub issues](https://img.shields.io/github/issues/T1rth1/Promptopia)](https://github.com/T1rth1/Promptopia)
-
 Promptopia is a robust Full Stack Next.js application designed as a one-stop solution for discovering and sharing AI-powered prompts.
 
 ## 🚀 Key Features
